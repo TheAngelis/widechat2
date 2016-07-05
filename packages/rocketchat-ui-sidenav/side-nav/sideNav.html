@@ -4,9 +4,11 @@
 			{{> accountBox }}
 		</header>
 		{{#if currentUser}}
+		<div aria-label="INICIO"><a href="/home">INICIO</a></div>
 			<div class="unread-rooms top-unread-rooms hidden">
 				{{_ "More_unreads"}} <i class="icon-up-big"></i>
 			</div>
+
 			<div class="rooms-list" aria-label="{{_ "Channels"}}" role="region">
 				<div class="wrapper">
 					{{ > unreadRooms }}
