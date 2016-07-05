@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ROOTPATH=/var/www/rocket.chat
+ROOTPATH=$HOME/.meteor
 PM2FILE=pm2.json
 if [ "$1" == "development" ]; then
   ROOTPATH=/var/www/rocket.chat.dev
